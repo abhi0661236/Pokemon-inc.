@@ -1,0 +1,109 @@
+@import url(./colors.css);
+@import url(./animate.css);
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.navbar-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+@media (max-width: 811px) {
+    .navbar-wrapper{
+        background-color: #212529;
+    }
+}
+
+
+.carousel-wrapper #pokemon-carousel img{
+    height: 670px;
+}
+@media (max-width: 812px) {
+    .carousel-wrapper #pokemon-carousel img{
+        height: 400px;
+    }
+}
+.carousel-wrapper #pokemon-carousel .carousel-caption{
+    padding: 10px;
+    background-color: rgba(39, 39, 39, 0.149);
+}
+
+/* team section */
+section{
+    margin-top: 50px;
+    
+}
+.pkmn-team-wrapper .col-md-4{
+    text-align: center;
+
+}
+.pkmn-team-wrapper .col-md-4 .container{
+    padding: 20px;
+    border: 1px solid var(--theme-secondary);
+    /* background: linear-gradient(90deg, rgb(182, 182, 182), rgb(219, 251, 219)); */
+}
+.pkmn-team-wrapper .col-md-4 .container:hover{
+    padding: 20px;
+    transition: .2s all ease;
+    box-shadow: -1px 5px 10px gray;
+}
+.pkmn-team-wrapper>.row>.col-md-12{
+    width: fit-content;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+.pkmn-team-wrapper>.row>.col-md-12::before{
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 3px;
+    background-color: black;
+    top: 100%;
+    left: 15px;
+}
+.pkmn-team-wrapper>.row>.col-md-12 h2 span{
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border: 1px solid black;
+}
+/* end of team section */
+
+/* content section */
+.pkmn-content-wrapper{
+    background-color: var(--theme-primary);
+    padding: 50px 0;
+}
+.pkmn-content-wrapper .container .row{
+    align-items: center;
+}
+.pkmn-content-wrapper .container .row .col-md-4 img{
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+}
+.pkmn-content-wrapper .container .row .col-md-8{
+    padding-right: 50px;
+    text-align: justify;
+}
+.pkmn-flipped{
+    padding-left: 50px;
+    padding-right: 0px !important;
+}
+
+/* end of content section */
+
+/* footer section */
+footer .container p.float-md-end:hover{
+    cursor: pointer;
+    color: rgb(217, 217, 217);
+}
+/* end of footer section */
